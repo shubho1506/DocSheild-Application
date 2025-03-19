@@ -1,0 +1,113 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius);
+  font-weight: 500;
+  transition: all 0.2s ease;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  cursor: pointer;
+}
+
+/* Variants */
+.button-default {
+  background-color: var(--primary-color);
+  color: var(--primary-foreground);
+  border: 1px solid var(--primary-color);
+}
+
+.button-default:hover {
+  opacity: 0.9;
+}
+
+.button-destructive {
+  background-color: var(--destructive-color);
+  color: var(--destructive-foreground);
+  border: 1px solid var(--destructive-color);
+}
+
+.button-destructive:hover {
+  opacity: 0.9;
+}
+
+.button-outline {
+  background-color: transparent;
+  color: var(--foreground-color);
+  border: 1px solid var(--border-color);
+}
+
+.button-outline:hover {
+  background-color: var(--muted-color);
+  color: var(--foreground-color);
+}
+
+.button-secondary {
+  background-color: var(--secondary-color);
+  color: var(--secondary-foreground);
+  border: 1px solid var(--secondary-color);
+}
+
+.button-secondary:hover {
+  opacity: 0.9;
+}
+
+.button-ghost {
+  background-color: transparent;
+  color: var(--foreground-color);
+  border: 1px solid transparent;
+}
+
+.button-ghost:hover {
+  background-color: var(--muted-color);
+  color: var(--foreground-color);
+}
+
+.button-link {
+  background-color: transparent;
+  color: var(--primary-color);
+  border: none;
+  text-decoration: underline;
+  padding: 0;
+  height: auto;
+}
+
+.button-link:hover {
+  text-decoration: none;
+}
+
+/* Sizes */
+.button-size-default {
+  height: 2.5rem;
+  padding: 0 1rem;
+}
+
+.button-size-sm {
+  height: 2rem;
+  padding: 0 0.75rem;
+  font-size: 0.75rem;
+}
+
+.button-size-lg {
+  height: 3rem;
+  padding: 0 1.5rem;
+  font-size: 1rem;
+}
+
+.button-size-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0;
+}
+
+/* States */
+.button:focus-visible {
+  outline: 2px solid var(--primary-color);
+  outline-offset: 2px;
+}
+
+.button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
