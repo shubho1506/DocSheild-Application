@@ -1,0 +1,154 @@
+.blockchain-diagram {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+@media (min-width: 768px) {
+  .blockchain-diagram {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+/* Document */
+.diagram-document {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.document-icon {
+  width: 4rem;
+  height: 4rem;
+  color: #60a5fa;
+  background-color: rgba(96, 165, 250, 0.1);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+}
+
+.document-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: var(--foreground-color);
+}
+
+/* Arrow */
+.diagram-arrow {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: var(--muted-foreground);
+}
+
+@media (max-width: 767px) {
+  .diagram-arrow {
+    transform: rotate(90deg);
+  }
+}
+
+/* Hash */
+.diagram-hash {
+  background-color: rgba(245, 158, 11, 0.1);
+  border: 1px solid rgba(245, 158, 11, 0.3);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  max-width: 300px;
+}
+
+.hash-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #f59e0b;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.hash-value {
+  font-family: monospace;
+  font-size: 0.75rem;
+  color: var(--muted-foreground);
+  word-break: break-all;
+  text-align: center;
+}
+
+/* Blockchain */
+.diagram-blockchain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.75rem;
+  width: 100%;
+  max-width: 400px;
+}
+
+.blockchain-blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  width: 100%;
+}
+
+@media (min-width: 640px) {
+  .blockchain-blocks {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+.blockchain-block {
+  background-color: rgba(16, 185, 129, 0.1);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  width: 100%;
+  max-width: 150px;
+}
+
+.active-block {
+  border: 2px solid #10b981;
+  box-shadow: 0 0 0 2px rgba(16, 185, 129, 0.2);
+}
+
+.block-header {
+  background-color: rgba(16, 185, 129, 0.2);
+  padding: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #10b981;
+  text-align: center;
+}
+
+.block-content {
+  padding: 0.75rem;
+  font-size: 0.7rem;
+  color: var(--muted-foreground);
+  font-family: monospace;
+}
+
+.block-hash,
+.block-time {
+  margin-bottom: 0.25rem;
+}
+
+.document-record {
+  margin-top: 0.5rem;
+  padding: 0.25rem;
+  background-color: rgba(16, 185, 129, 0.2);
+  border-radius: 0.25rem;
+  text-align: center;
+  font-weight: 500;
+  color: #10b981;
+}
+
+.blockchain-label {
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #10b981;
+  text-align: center;
+}
+

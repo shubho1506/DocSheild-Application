@@ -63,7 +63,7 @@ import { Checkbox } from "../components/ui/checkbox"
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import "../CSS/Signup.css"
+import "./Signup.css"
 
 export default function SignupPage() {
   const [name, setName] = useState("");

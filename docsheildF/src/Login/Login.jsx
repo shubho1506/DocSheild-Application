@@ -43,7 +43,7 @@ import { Checkbox } from "../components/ui/checkbox"
 import { useState } from "react";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
-import "../CSS/Login.css"
+import "./Login.css"
 
 export default function LoginPage() {
   const [username, setUsername] = useState("");
@@ -59,7 +59,7 @@ export default function LoginPage() {
         password,
       });
       localStorage.setItem("token", response.data.token);
-      navigate("/"); // Redirect to homepage
+      navigate("/home"); // Redirect to homepage
     } catch (err) {
       setError("Invalid credentials");
     }

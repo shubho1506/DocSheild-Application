@@ -1,0 +1,18 @@
+.home-layout {
+  position: relative;
+}
+
+.sidebar-wrapper .side-panel {
+  transform: translateX(-100%);
+}
+
+.sidebar-wrapper.open .side-panel {
+  transform: translateX(0);
+}
+
+@media (min-width: 769px) {
+  .sidebar-wrapper .side-panel {
+    transform: translateX(0);
+  }
+}
+

@@ -18,7 +18,7 @@
 // import Image from "next/image"
 import { Shield, FileCheck, Lock, Clock, ChevronRight, FileText } from "lucide-react"
 import { Button } from "../components/ui/button"
-import "../CSS/Landing.css"
+import "./Landing.css"
 import { Link, useNavigate } from "react-router-dom";
 
 
